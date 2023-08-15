@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:Impact, sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .navbar {
@@ -29,8 +29,8 @@
 }
 
 #navbar__logo {
-    background-color: #585078;
-    background-image: linear-gradient(to top, #300ab8 0%, rgb(134, 128, 206) 100%);
+    background-color: #b8350a;
+    background-image: linear-gradient(to top, #b8350a 0%, rgb(241, 207, 204) 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -69,11 +69,11 @@
 }
 
 .navbar__links:hover {
-    color: #300ab8;
+    color: #b8350a;
     transition: all 0.3s ease;
 }
 
-@media scfenn and (mas-width: 960px) {
+@media screen and (max-width: 960px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -131,8 +131,29 @@
     }
 
     #mobile-menu {
-        
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);      
     }
+
+    .navbar__toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translate(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translate(-8px) rotate(-45deg);
+    }
+
 
 }
 
