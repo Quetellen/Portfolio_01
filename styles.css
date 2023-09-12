@@ -187,7 +187,7 @@
 @media screen and (max-width: 768px) {
     .main__container {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-self: center;
         width: 100%;
@@ -221,6 +221,11 @@
         font-size: 2rem;
         margin-top: 3rem;
     }
+
+    .main__img--container img{
+        width: 250px;
+        height: 250px;
+      }
 
     .main__content h2 {
         font-size: 2rem;
@@ -337,6 +342,56 @@
 }
 
 
+/* Portfolio */
+
+.portfolio{
+    background-color: #fafafa;
+}
+
+.portfolio__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #ede6e682;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.portfolio__container h1{
+    font-size: 4rem;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #ec7819 0%, rgb(240, 197, 170) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.portfolio__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+
+.portfolio__card {
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    transition: 0.3s ease-in;
+  }
 
 
 /* Footer CSS */
