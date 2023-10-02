@@ -184,7 +184,7 @@
 
 /*Mobile responsive*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .main__container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -293,7 +293,7 @@
 
 /*Mobile responsive*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .about__container {
         display: grid;
         grid-template-columns: auto;
@@ -363,6 +363,7 @@
 }
 
 .portfolio__container h1{
+    
     font-size: 4rem;
     background-color: #fff;
     background-image: linear-gradient(to top, #ec7819 0%, rgb(240, 197, 170) 100%);
@@ -377,6 +378,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
+    
 }
 
 
@@ -389,8 +391,19 @@
     flex-direction: column;
     justify-content: center;
     color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background-image: linear-gradient(to right, #000000 0%, #9e979f 100%);
     transition: 0.3s ease-in;
+  }
+
+  @media screen and (max-width: 768px){
+    .portfolio__wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .portfolio__wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
   }
 
 
@@ -477,7 +490,7 @@
     color: #fff;
   }
   
-  @media screen and (max-width: 820px) {
+  @media screen and (max-width: 960px) {
     .footer__links {
       padding-top: 2rem;
     }
